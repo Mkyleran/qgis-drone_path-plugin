@@ -1,0 +1,47 @@
+# This file contains metadata for your plugin.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Drone Path
+qgisMinimumVersion=3.0
+description=This plugin prepares a drone flight path based on certain required inputs. This plugin gives a Fly Litchi compatible csv file with way points for the drone path.
+version=0.1
+author=Technology for Wildlife Foundation
+email=sravanthi@techforwildlife.com
+
+about=This plugin prepares a drone flight path based on certain required inputs. This plugin gives a Fly Litchi compatible csv file with way points for the drone path.
+
+tracker=https://github.com/techforwildlife/qgis-drone_path-plugin/issues
+repository=https://github.com/techforwildlife/qgis-drone_path-plugin
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=no
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=python,drone,path,grid,gridlines,
+
+homepage=http://homepage
+category=Vector
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
+Category of the plugin: Raster, Vector, Database or Web
+# category=Vector
+
+# If the plugin can run on QGIS Server.
+server=False
+
