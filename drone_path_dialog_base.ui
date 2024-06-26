@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Altitude:</string>
+    <string>Altitude (m):</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit">
@@ -59,7 +59,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Field of View:</string>
+    <string>Field of View (deg):</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
