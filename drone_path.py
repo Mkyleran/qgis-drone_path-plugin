@@ -204,7 +204,7 @@ class DronePath:
             return msg.exec_()
         self.alt = self.dlg.lineEdit.text()
         fov = self.dlg.lineEdit_3.text()                #Enter in degrees 
-        fov = float(fov)*(3.14/180)                     #Convert to radians
+        fov = math.radians(float(fov))                  #Convert to radians
         print(int(self.alt))
         D = 2*int(self.alt)*math.tan((float(fov))/2)    #Diagonal of the drone image
         D  = round(D,2)
@@ -319,8 +319,8 @@ class DronePath:
             return msg.exec_()
         if line.crs() == QgsCoordinateReferenceSystem(4326):
             R = 6371000 #earth radius in meters
-            pi = 3.14
-            griddist = (180*self.dist)/(6371000*pi)
+            pi = math.pi
+            griddist = (180*self.dist)/(R*pi)
             print(griddist)
            
             #Using arrayoffsetlines tool to create parallel lines tothe input line
